@@ -3,8 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
 import App from "./App.js";
-import './App.css';
-import * as serviceWorker from './serviceWorker';
+import "./App.css";
+import * as serviceWorker from "./serviceWorker";
 
 const lifecycles = singleSpaReact({
   React,

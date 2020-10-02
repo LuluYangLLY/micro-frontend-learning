@@ -4,6 +4,9 @@ But we want to convert it to a single-spa appliaction. So we follow this article
 
 After the converting, we can run `yarn start --https`, and then go to the single-spa playground to test it. [Link](https://single-spa-playground.org/playground/instant-test?name=@test/micro-app-react-cra&url=8080)
 
+Fix prettier warning/error by run
+`yarn prettier --write './**'`
+
 ## Available Scripts
 
 In the project directory, you can run:
