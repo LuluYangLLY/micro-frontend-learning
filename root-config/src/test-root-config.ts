@@ -6,13 +6,13 @@ registerApplication({
     System.import(
       "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
     ),
-  activeWhen: ["/"],
+  activeWhen: ["/welcome"],
 });
 
 registerApplication({
-  name: "@test/micro-app-react",
-  app: () => System.import("@test/micro-app-react"),
-  activeWhen: ["/micro-app-react"]
+  name: "@test/micro-app-react-crat",
+  app: () => System.import("@test/micro-app-react-cra"),
+  activeWhen: ["/micro-app-react-cra"]
 });
 
 start({
