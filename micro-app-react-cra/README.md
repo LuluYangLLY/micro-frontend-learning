@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+But we want to convert it to a single-spa appliaction. So we follow this article [Converting a create-react-app (CRA) project to single-spa](https://www.youtube.com/watch?v=W8oaySHuj3Y&list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&index=10&ab_channel=JoelDenning).
+
+After the converting, we can run `yarn start --https`, and then go to the single-spa playground to test it. [Link](https://single-spa-playground.org/playground/instant-test?name=@test/micro-app-react-cra&url=8080)
+
 ## Available Scripts
 
 In the project directory, you can run:
