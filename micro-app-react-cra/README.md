@@ -1,11 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-But we want to convert it to a single-spa appliaction. So we follow this article [Converting a create-react-app (CRA) project to single-spa](https://www.youtube.com/watch?v=W8oaySHuj3Y&list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&index=10&ab_channel=JoelDenning).
+## Converting this create-react-app (CRA) project to single-spa
 
-After the converting, we can run `yarn start --https`, and then go to the single-spa playground to test it. [Link](https://single-spa-playground.org/playground/instant-test?name=@test/micro-app-react-cra&url=8080)
+### Converting and verifying
+ 
+But we want to convert it to a single-spa appliaction. So we follow this video [Converting a create-react-app (CRA) project to single-spa](https://www.youtube.com/watch?v=W8oaySHuj3Y&list=PLLUD8RtHvsAOhtHnyGx57EYXoaNsxGrTU&index=10&ab_channel=JoelDenning).
 
-Fix prettier warning/error by run
-`yarn prettier --write './**'`
+After the converting, we can run `yarn start --https`, and then go to the this [single-spa playground](https://single-spa-playground.org/playground/instant-test?name=@test/micro-app-react-cra&url=8080) to test it.
+
+### Fix the available scripts after converting
+
+Run `yarn format` to fix prettier warning/error
+
+Add some jest configuration to fix `yarn test` issue. Here is a [jest doc](https://jestjs.io/docs/en/webpack)
+
+
 
 ## Available Scripts
 
@@ -13,11 +22,8 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+After convert to single-spa application, can't to use [http://localhost:3000](http://localhost:3000) to view it in the browser.<br /> 
+Must use single-spa playground to test.
 
 ### `yarn test`
 
