@@ -10,9 +10,15 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@test/micro-app-react-crat",
+  name: "@test/micro-app-react-cra",
   app: () => System.import("@test/micro-app-react-cra"),
   activeWhen: ["/micro-app-react-cra"]
+});
+
+registerApplication({
+  name: "@test/micro-app-vue",
+  app: () => System.import("@test/micro-app-vue"),
+  activeWhen: ["/micro-app-vue"]
 });
 
 start({
