@@ -1,4 +1,9 @@
 import { registerApplication, start } from "single-spa";
+import { isLogin, login } from "@test/micro-app-utils";
+
+if (!isLogin()) {
+  login();
+}
 
 registerApplication({
   name: "@single-spa/welcome",
@@ -12,13 +17,13 @@ registerApplication({
 registerApplication({
   name: "@test/micro-app-react-cra",
   app: () => System.import("@test/micro-app-react-cra"),
-  activeWhen: ["/micro-app-react-cra"]
+  activeWhen: ["/micro-app-react-cra"],
 });
 
 registerApplication({
   name: "@test/micro-app-vue",
   app: () => System.import("@test/micro-app-vue"),
-  activeWhen: ["/micro-app-vue"]
+  activeWhen: ["/micro-app-vue"],
 });
 
 start({

@@ -2,7 +2,7 @@ import "./set-public-path";
 
 const isLogin = () => {
   const getIsLogin = localStorage.getItem("isLogin");
-  return getIsLogin && getIsLogin === "true";
+  return !!getIsLogin && getIsLogin === "true";
 };
 
 const login = () => {

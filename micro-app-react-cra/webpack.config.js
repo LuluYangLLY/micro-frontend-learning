@@ -22,5 +22,6 @@ module.exports = (webpackConfigEnv) => {
         },
       ],
     },
+    externals: ["@test/micro-app-utils"],
   });
 };

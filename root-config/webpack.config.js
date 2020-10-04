@@ -15,6 +15,7 @@ module.exports = (webpackConfigEnv) => {
     devServer: {
       historyApiFallback: true,
     },
+    externals: ["@test/micro-app-utils"],
     plugins: [
       new HtmlWebpackPlugin({
         inject: false,
